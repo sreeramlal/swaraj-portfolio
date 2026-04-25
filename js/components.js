@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     const servicesHTML = `
         <div class="container">
             <div class="row">
@@ -78,7 +78,7 @@ $(document).ready(function() {
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
                             <div class="portfolio__item">
-                                <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/kappiri.png">
+                                <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/kappiri.webp">
                                     <a href="https://youtu.be/FXr-2BpS4Po?si=4ENMvQX2Tk3CHRfu" class="play-btn video-popup"><i
                                             class="fa fa-play"></i></a>
                                 </div>
@@ -126,10 +126,10 @@ $(document).ready(function() {
     if ($('#services-component').length > 0) {
         $('#services-component').html(servicesHTML);
     }
-    
+
     if ($('#topworks-component').length > 0) {
         $('#topworks-component').html(topWorksHTML);
-        
+
         // Re-initialize background images for items that were just injected
         $('.set-bg').each(function () {
             var bg = $(this).data('setbg');
