@@ -67,20 +67,12 @@ $(document).ready(function() {
             </div>
             <section class="portfolio spad pt-0">
                 <div class="container">
-                    <div class="row portfolio__gallery">
+                    <div class="row portfolio__gallery no-gutters">
                         <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
                             <div class="portfolio__item">
                                 <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/kappiri.png">
                                     <a href="https://youtu.be/FXr-2BpS4Po?si=4ENMvQX2Tk3CHRfu" class="play-btn video-popup"><i
                                             class="fa fa-play"></i></a>
-                                </div>
-                                <div class="portfolio__item__text">
-                                    <h4>KAPPIRI - DOCUMENTARY</h4>
-                                    <ul>
-                                        <li>FILM </li>
-                                        <li>VFX</li>
-                                        <li>CINEMATOGRAPHY</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -90,10 +82,6 @@ $(document).ready(function() {
                                     <a href="https://m.youtube.com/watch?v=5XdWwAL--mQ" class="play-btn video-popup"><i
                                             class="fa fa-play"></i></a>
                                 </div>
-                                <div class="portfolio__item__text">
-                                    <h4>Paper Boat AD</h4>
-                                    <span>VFX</span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
@@ -101,14 +89,15 @@ $(document).ready(function() {
                                 <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/phonepay.png">
                                     <a href="https://m.youtube.com/watch?v=kfiAp_Hq1eM" class="play-btn video-popup"><i
                                             class="fa fa-play"></i></a>
-                                </div>
-                                <div class="portfolio__item__text">
-                                    <h4>PhonePe</h4>
-                                    <ul>
-                                        <li>VFX</li>
-                                        <li>Cinematography</li>
-                                    </ul>
-                                </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/foodadvfx.png">
+                                    <a href="https://youtu.be/ECdSHubQGi8?si=CpiKRRDoNOVTuQmn" class="play-btn video-popup"><i
+                                            class="fa fa-play"></i></a>
+                                </div> 
                             </div>
                         </div>
                     </div>
