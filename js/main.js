@@ -25,9 +25,10 @@
             $('.portfolio__filter li').removeClass('active');
             $(this).addClass('active');
         });
-        if ($('.portfolio__gallery').length > 0) {
+        if ($('.portfolio__gallery').length > 0 && !$('.portfolio__gallery').hasClass('mixitup-ready')) {
             var containerEl = document.querySelector('.portfolio__gallery');
             var mixer = mixitup(containerEl);
+            $('.portfolio__gallery').addClass('mixitup-ready');
         }
     });
 

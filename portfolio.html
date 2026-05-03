@@ -519,28 +519,33 @@
             galleryRow.appendChild(row2);
             galleryRow.appendChild(row3);
 
+            // Re-initialize MixItUp for the new structure
+            if (typeof mixitup !== 'undefined') {
+                const mixer = mixitup('#portfolioGalleryRow', {
+                    selectors: {
+                        target: '.mix'
+                    },
+                    animation: {
+                        duration: 300
+                    }
+                });
+                $('#portfolioGalleryRow').addClass('mixitup-ready');
+            }
+
             // image-popup initialization removed entirely.
 
             const urlParams = new URLSearchParams(window.location.search);
             const filterToApply = urlParams.get('filter');
-            const initialFilter = filterToApply ? '.' + filterToApply : 'all';
-
-            // Synchronously initialize MixItUp precisely after the items are safely injected into the DOM
-            if (typeof mixitup === 'function') {
-                mixitup(galleryRow, {
-                    load: {
-                        filter: initialFilter
-                    },
-                    animation: {
-                        enable: true
+            if (filterToApply) {
+                // Wait for high res images and main.js to initialize the MixItUp layout before dispatching URL filters
+                $(window).on('load', function() {
+                    const $filterLi = $('.portfolio__filter li[data-filter=".' + filterToApply + '"]');
+                    if ($filterLi.length > 0) {
+                        setTimeout(function () {
+                            $filterLi.click();
+                        }, 50); 
                     }
                 });
-            }
-
-            // Manually override the UI filter buttons to reflect the accurate active state
-            if (filterToApply) {
-                $('.portfolio__filter li').removeClass('active');
-                $('.portfolio__filter li[data-filter=".' + filterToApply + '"]').addClass('active');
             }
         });
     </script>
