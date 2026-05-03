@@ -108,23 +108,34 @@
             #portfolioGalleryRow {
                 display: flex;
                 flex-direction: column;
-                height: 840px; /* exactly 3 rows of 280px height */
+                height: 840px;
+                /* exactly 3 rows of 280px height */
                 overflow-x: auto;
                 overflow-y: hidden;
-                scrollbar-width: none; /* Firefox */
-                -ms-overflow-style: none;  /* IE and Edge */
-                margin: 0; padding: 0; gap: 0;
+                scrollbar-width: none;
+                /* Firefox */
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                margin: 0;
+                padding: 0;
+                gap: 0;
             }
+
             #portfolioGalleryRow::-webkit-scrollbar {
-                display: none; /* Chrome, Safari, Opera */
+                display: none;
+                /* Chrome, Safari, Opera */
             }
+
             .scroll-row-horiz {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 height: 280px;
-                margin: 0; padding: 0; gap: 0;
+                margin: 0;
+                padding: 0;
+                gap: 0;
             }
+
             #portfolioGalleryRow .mix {
                 margin: 0 !important;
                 padding: 0 !important;
@@ -318,121 +329,121 @@
     <script>
         $(document).ready(function () {
             const projectFolders = {
-          "blender-3d": {
+                "blender-3d": {
                     "title": "Blender 3D OUT images",
                     "images": [
-                              "img/VFX Artist/Blender 3D OUT images/Chair_Img_1.png",
-                              "img/VFX Artist/Blender 3D OUT images/Cube_Photo.png",
-                              "img/VFX Artist/Blender 3D OUT images/London Bridge0001.png",
-                              "img/VFX Artist/Blender 3D OUT images/London bridge 2.png",
-                              "img/VFX Artist/Blender 3D OUT images/NIVEA PHOTO 1.png",
-                              "img/VFX Artist/Blender 3D OUT images/Photo Out.png",
-                              "img/VFX Artist/Blender 3D OUT images/ROOM_OUT-1.png",
-                              "img/VFX Artist/Blender 3D OUT images/Screenshot 2026-01-31 at 9.33.28 PM.png",
-                              "img/VFX Artist/Blender 3D OUT images/Screenshot 2026-01-31 at 9.34.47 PM.png",
-                              "img/VFX Artist/Blender 3D OUT images/Watch_OUT_3.png",
-                              "img/VFX Artist/Blender 3D OUT images/photo1.png"
+                        "img/VFX Artist/Blender 3D OUT images/Chair_Img_1.png",
+                        "img/VFX Artist/Blender 3D OUT images/Cube_Photo.png",
+                        "img/VFX Artist/Blender 3D OUT images/London Bridge0001.png",
+                        "img/VFX Artist/Blender 3D OUT images/London bridge 2.png",
+                        "img/VFX Artist/Blender 3D OUT images/NIVEA PHOTO 1.png",
+                        "img/VFX Artist/Blender 3D OUT images/Photo Out.png",
+                        "img/VFX Artist/Blender 3D OUT images/ROOM_OUT-1.png",
+                        "img/VFX Artist/Blender 3D OUT images/Screenshot 2026-01-31 at 9.33.28 PM.png",
+                        "img/VFX Artist/Blender 3D OUT images/Screenshot 2026-01-31 at 9.34.47 PM.png",
+                        "img/VFX Artist/Blender 3D OUT images/Watch_OUT_3.png",
+                        "img/VFX Artist/Blender 3D OUT images/photo1.png"
                     ]
-          },
-          "maya-3d": {
+                },
+                "maya-3d": {
                     "title": "Maya 3D image out",
                     "images": [
-                              "img/VFX Artist/Maya 3D image out/Screenshot 2026-01-31 at 9.41.24 PM.png",
-                              "img/VFX Artist/Maya 3D image out/Watch Tower_ImgOut1.jpg"
+                        "img/VFX Artist/Maya 3D image out/Screenshot 2026-01-31 at 9.41.24 PM.png",
+                        "img/VFX Artist/Maya 3D image out/Watch Tower_ImgOut1.jpg"
                     ]
-          },
-          "bike-photography": {
+                },
+                "bike-photography": {
                     "title": "Bike Photography",
                     "images": [
-                              "img/Cinematographer/Bike Photography/24C76A92-A368-4C89-9610-C9B727FC55B9.JPG",
-                              "img/Cinematographer/Bike Photography/DSC00188.JPG",
-                              "img/Cinematographer/Bike Photography/DSC00191.JPG",
-                              "img/Cinematographer/Bike Photography/DSC00222.JPG",
-                              "img/Cinematographer/Bike Photography/DSC00923.JPG",
-                              "img/Cinematographer/Bike Photography/DSC08465_SnapseedCopy.jpg",
-                              "img/Cinematographer/Bike Photography/DSC08795.JPG",
-                              "img/Cinematographer/Bike Photography/DSC08804.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_20221229_0058.jpg",
-                              "img/Cinematographer/Bike Photography/IMG_20221229_0061.jpg",
-                              "img/Cinematographer/Bike Photography/IMG_3615_jpg.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_3768.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_5900.JPEG",
-                              "img/Cinematographer/Bike Photography/IMG_5926.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_6157.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_7282.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_7790.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_7850.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_7863.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_7868.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_8039.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9280.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9356_jpg.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9385.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9539.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9614.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9840.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9845.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9847.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9885.JPG",
-                              "img/Cinematographer/Bike Photography/IMG_9897.JPG",
-                              "img/Cinematographer/Bike Photography/Screenshot 2025-09-01 at 7.24.52 PM_SnapseedCopy.jpg",
-                              "img/Cinematographer/Bike Photography/Screenshot 2025-09-01 at 7.28.09 PM.JPG",
-                              "img/Cinematographer/Bike Photography/Screenshot 2025-09-01 at 7.31.50 PM.jpg",
-                              "img/Cinematographer/Bike Photography/ld-export-2135895f-09012025_SnapseedCopy.jpg",
-                              "img/Cinematographer/Bike Photography/ld-export-b1107463-02222023.JPG",
-                              "img/Cinematographer/Bike Photography/ld-export-bfb8b57f-07052023.JPG",
-                              "img/Cinematographer/Bike Photography/ld-export-de44f146-02222023.JPG"
+                        "img/Cinematographer/Bike Photography/24C76A92-A368-4C89-9610-C9B727FC55B9.JPG",
+                        "img/Cinematographer/Bike Photography/DSC00188.JPG",
+                        "img/Cinematographer/Bike Photography/DSC00191.JPG",
+                        "img/Cinematographer/Bike Photography/DSC00222.JPG",
+                        "img/Cinematographer/Bike Photography/DSC00923.JPG",
+                        "img/Cinematographer/Bike Photography/DSC08465_SnapseedCopy.jpg",
+                        "img/Cinematographer/Bike Photography/DSC08795.JPG",
+                        "img/Cinematographer/Bike Photography/DSC08804.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_20221229_0058.jpg",
+                        "img/Cinematographer/Bike Photography/IMG_20221229_0061.jpg",
+                        "img/Cinematographer/Bike Photography/IMG_3615_jpg.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_3768.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_5900.JPEG",
+                        "img/Cinematographer/Bike Photography/IMG_5926.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_6157.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_7282.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_7790.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_7850.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_7863.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_7868.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_8039.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9280.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9356_jpg.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9385.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9539.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9614.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9840.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9845.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9847.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9885.JPG",
+                        "img/Cinematographer/Bike Photography/IMG_9897.JPG",
+                        "img/Cinematographer/Bike Photography/Screenshot 2025-09-01 at 7.24.52 PM_SnapseedCopy.jpg",
+                        "img/Cinematographer/Bike Photography/Screenshot 2025-09-01 at 7.28.09 PM.JPG",
+                        "img/Cinematographer/Bike Photography/Screenshot 2025-09-01 at 7.31.50 PM.jpg",
+                        "img/Cinematographer/Bike Photography/ld-export-2135895f-09012025_SnapseedCopy.jpg",
+                        "img/Cinematographer/Bike Photography/ld-export-b1107463-02222023.JPG",
+                        "img/Cinematographer/Bike Photography/ld-export-bfb8b57f-07052023.JPG",
+                        "img/Cinematographer/Bike Photography/ld-export-de44f146-02222023.JPG"
                     ]
-          },
-          "car-photography": {
+                },
+                "car-photography": {
                     "title": "Car Photography",
                     "images": [
-                              "img/Cinematographer/Car Photography/E4479013-00AA-446C-9BAF-953275CE3FC5.jpg",
-                              "img/Cinematographer/Car Photography/IMG_9232.JPG"
+                        "img/Cinematographer/Car Photography/E4479013-00AA-446C-9BAF-953275CE3FC5.jpg",
+                        "img/Cinematographer/Car Photography/IMG_9232.JPG"
                     ]
-          },
-          "festival-photography": {
+                },
+                "festival-photography": {
                     "title": "Festival Photography",
                     "images": [
-                              "img/Cinematographer/Festival Photography/DSC07960.JPG",
-                              "img/Cinematographer/Festival Photography/DSC07982.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08116.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08162.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08190.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08210.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08228.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08232.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08262.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08289.JPG",
-                              "img/Cinematographer/Festival Photography/DSC08348.JPG"
+                        "img/Cinematographer/Festival Photography/DSC07960.JPG",
+                        "img/Cinematographer/Festival Photography/DSC07982.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08116.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08162.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08190.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08210.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08228.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08232.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08262.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08289.JPG",
+                        "img/Cinematographer/Festival Photography/DSC08348.JPG"
                     ]
-          },
-          "models": {
+                },
+                "models": {
                     "title": "Models",
                     "images": [
-                              "img/Cinematographer/Models/DSC06462.JPG",
-                              "img/Cinematographer/Models/DSC08755.JPG",
-                              "img/Cinematographer/Models/DSC08767.jpg",
-                              "img/Cinematographer/Models/DSC08794 2.JPG",
-                              "img/Cinematographer/Models/DSC08794.JPG",
-                              "img/Cinematographer/Models/IMG_7715.JPG",
-                              "img/Cinematographer/Models/IMG_7716.JPG"
+                        "img/Cinematographer/Models/DSC06462.JPG",
+                        "img/Cinematographer/Models/DSC08755.JPG",
+                        "img/Cinematographer/Models/DSC08767.jpg",
+                        "img/Cinematographer/Models/DSC08794 2.JPG",
+                        "img/Cinematographer/Models/DSC08794.JPG",
+                        "img/Cinematographer/Models/IMG_7715.JPG",
+                        "img/Cinematographer/Models/IMG_7716.JPG"
                     ]
-          },
-          "achivements": {
+                },
+                "achivements": {
                     "title": "Achivements",
                     "images": [
-                              "img/Others/Achivements/IMG_3069.jpg",
-                              "img/Others/Achivements/IMG_4452.jpg",
-                              "img/Others/Achivements/IMG_4453.jpg",
-                              "img/Others/Achivements/IMG_4454.jpg",
-                              "img/Others/Achivements/IMG_5405.HEIC",
-                              "img/Others/Achivements/IMG_7181_jpg.JPG",
-                              "img/Others/Achivements/IMG_8585.jpg",
-                              "img/Others/Achivements/photo-output.HEIC"
+                        "img/Others/Achivements/IMG_3069.jpg",
+                        "img/Others/Achivements/IMG_4452.jpg",
+                        "img/Others/Achivements/IMG_4453.jpg",
+                        "img/Others/Achivements/IMG_4454.jpg",
+                        "img/Others/Achivements/IMG_5405.HEIC",
+                        "img/Others/Achivements/IMG_7181_jpg.JPG",
+                        "img/Others/Achivements/IMG_8585.jpg",
+                        "img/Others/Achivements/photo-output.HEIC"
                     ]
-          }
-};
+                }
+            };
 
             const filtersMap = {
                 'blender-3d': 'vfxartist',
@@ -454,7 +465,7 @@
             ];
 
             let allItems = [];
-            
+
             portfolioVideos.forEach(v => {
                 allItems.push({ type: 'video', src: v.src, url: v.url, filters: v.filter });
             });
@@ -473,7 +484,7 @@
             });
 
             const galleryRow = document.getElementById('portfolioGalleryRow');
-            
+
             const row1 = document.createElement('div');
             const row2 = document.createElement('div');
             const row3 = document.createElement('div');
